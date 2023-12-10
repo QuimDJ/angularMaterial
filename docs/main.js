@@ -571,9 +571,7 @@ function CoursesCardListComponent_mat_card_0_Template(rf, ctx) {
 }
 class CoursesCardListComponent {
   constructor() {}
-  ngOnInit() {
-    console.log("arriba");
-  }
+  ngOnInit() {}
   editCourse(course) {}
   static #_ = this.ɵfac = function CoursesCardListComponent_Factory(t) {
     return new (t || CoursesCardListComponent)();
