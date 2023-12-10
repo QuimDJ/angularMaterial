@@ -723,7 +723,7 @@ class CreateCourseComponent {
     selectors: [["create-course"]],
     decls: 18,
     vars: 1,
-    consts: [[1, "create-course-panel", "data-form"], [1, "title"], ["labelPosition", "bottom", 1, "mat-mdc-elevation-specific", "mat-elevation-z", 3, "linear"], ["errorMessage", "Course details in error"], ["matStepLabel", ""], [1, "stepper-buttons"], ["mat-raised-button", "", "color", "primary", "matStepperNext", ""], ["errorMessage", "Course lessons in error"], ["mat-raised-button", "", "matStepperPrevious", ""], ["mat-raised-button", "", "color", "primary"]],
+    consts: [[1, "create-course-panel", "data-form"], [1, "title"], ["labelPosition", "bottom", 1, "mat-mdc-elevation-specific", "mat-elevation-z", 3, "linear"], ["errorMessage", "Course details in error"], ["matStepLabel", ""], [1, "stepper-buttons"], ["mat-raised-button", "", "color", "primary", "matStepperNext", ""], ["errorMessage", "Course lessons in error"], ["mat-raised-button", "", "matStepperPrevious", ""], ["mat-raised-button", "", "color", "accent"]],
     template: function CreateCourseComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "h2", 1);
