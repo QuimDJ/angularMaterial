@@ -1,5 +1,37 @@
 <div [formGroup]="form" class="course-details-form">
+    <mat-form-field>
+        <mat-label>Course title</mat-label>
+        <input matInput placeholder="Course title" formControlName="title" #title>
 
+        <span matPrefix></span>
+        <span matSuffix></span>
+        <mat-hint align="end">
+            {{title.value.length}} / 60
+        </mat-hint>
+        <mat-error *ngIf="courseTitle.errors?.minlength">
+            Longitud mínima es de 5 carácteres.
+        </mat-error>
+        <mat-error *ngIf="courseTitle.errors?.maxlength">
+            Longitud máxima es de 60 carácteres.
+        </mat-error>
+    </mat-form-field>
+
+    <mat-radio-group class="course-type" formControlName="courseType">
+        <mat-radio-button value="Free">Free</mat-radio-button>
+        <mat-radio-button value="Premium">Premium</mat-radio-button>
+    </mat-radio-group>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="category" multiple placeholder="Select the category...">
+            <mat-option>None</mat-option>
+            <mat-optgroup>
+                <mat-option value="Beginners">BEGINNERS</mat-option>
+                <mat-option value="Intermediate">INTERMEDIATE</mat-option>
+                <mat-option value="Advanced">ADVANCED</mat-option>
+            </mat-optgroup>
+        </mat-select>
+    </mat-form-field>
 
 </div>
 
