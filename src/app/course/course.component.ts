@@ -19,6 +19,10 @@ export class CourseComponent implements OnInit, AfterViewInit {
 
   course:Course;
   loading = false;
+
+  @ViewChild(MatPaginator)
+  paginator: MatPaginator;
+
   lessons: Lesson[] = [];
   displayedColumns = ['seqNo', 'description', 'duration'];
   
@@ -36,7 +40,10 @@ export class CourseComponent implements OnInit, AfterViewInit {
 
   loadLessonsPage() {
     this.loading = true;
-    this.coursesService.findLessons(this.course.id,"asc",0,3)
+    this.coursesService.findLessons(this.course.id,
+      "asc",
+      this.paginator?.pageIndex ?? 0,
+      this.paginator?.pageSize ?? 3)
       .pipe(
         tap(lessons => this.lessons = lessons),
         catchError(err => {
@@ -49,8 +56,10 @@ export class CourseComponent implements OnInit, AfterViewInit {
   }
 
     ngAfterViewInit() {
-
-
+      this.paginator.page
+        .pipe(
+          tap(() => this.loadLessonsPage())
+        ).subscribe();
     }
 
 }
