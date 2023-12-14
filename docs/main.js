@@ -411,7 +411,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_courses_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/courses.service */ 6199);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 6575);
 /* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/table */ 6798);
-/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/progress-spinner */ 3910);
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/sort */ 7963);
+/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/progress-spinner */ 3910);
+
 
 
 
@@ -424,21 +426,21 @@ __webpack_require__.r(__webpack_exports__);
 
 function CourseComponent_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "mat-spinner");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
 function CourseComponent_th_7_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "th", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "th", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "#");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
 function CourseComponent_td_8_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -450,14 +452,14 @@ function CourseComponent_td_8_Template(rf, ctx) {
 }
 function CourseComponent_th_10_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "th", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "th", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Description");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
 function CourseComponent_td_11_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -469,14 +471,14 @@ function CourseComponent_td_11_Template(rf, ctx) {
 }
 function CourseComponent_th_13_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "th", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "th", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Duration");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
 function CourseComponent_td_14_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
@@ -488,12 +490,12 @@ function CourseComponent_td_14_Template(rf, ctx) {
 }
 function CourseComponent_tr_15_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "tr", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "tr", 19);
   }
 }
 function CourseComponent_tr_16_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "tr", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "tr", 20);
   }
 }
 const _c0 = () => [3, 5, 10];
@@ -537,7 +539,7 @@ class CourseComponent {
     },
     decls: 18,
     vars: 10,
-    consts: [[1, "course"], [1, "course-thumbnail", "mat-elevation-z8", 3, "src"], ["class", "spinner-container", 4, "ngIf"], ["mat-table", "", 1, "lessons-table", "mat-elevation-z8", 3, "dataSource"], ["matColumnDef", "seqNo"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "description"], ["matColumnDef", "duration"], ["class", "duration-cell", "mat-cell", "", 4, "matCellDef"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [1, "mat-elevation-z8", 3, "length", "pageSize", "pageSizeOptions"], [1, "spinner-container"], ["mat-header-cell", ""], ["mat-cell", ""], ["mat-cell", "", 1, "duration-cell"], ["mat-header-row", ""], ["mat-row", ""]],
+    consts: [[1, "course"], [1, "course-thumbnail", "mat-elevation-z8", 3, "src"], ["class", "spinner-container", 4, "ngIf"], ["mat-table", "", "matSort", "", "matSortDisableClear", "", "matSortActive", "description", "matSortDirection", "asc", 1, "lessons-table", "mat-elevation-z8", 3, "dataSource"], ["matColumnDef", "seqNo"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "description"], ["matColumnDef", "duration"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["class", "duration-cell", "mat-cell", "", 4, "matCellDef"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [1, "mat-elevation-z8", 3, "length", "pageSize", "pageSizeOptions"], [1, "spinner-container"], ["mat-header-cell", "", "mat-sort-header", ""], ["mat-cell", ""], ["mat-header-cell", ""], ["mat-cell", "", 1, "duration-cell"], ["mat-header-row", ""], ["mat-row", ""]],
     template: function CourseComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h2");
@@ -553,11 +555,11 @@ class CourseComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](10, CourseComponent_th_10_Template, 2, 0, "th", 5)(11, CourseComponent_td_11_Template, 2, 1, "td", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](12, 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, CourseComponent_th_13_Template, 2, 0, "th", 5)(14, CourseComponent_td_14_Template, 2, 1, "td", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, CourseComponent_th_13_Template, 2, 0, "th", 9)(14, CourseComponent_td_14_Template, 2, 1, "td", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](15, CourseComponent_tr_15_Template, 1, 0, "tr", 10)(16, CourseComponent_tr_16_Template, 1, 0, "tr", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](15, CourseComponent_tr_15_Template, 1, 0, "tr", 11)(16, CourseComponent_tr_16_Template, 1, 0, "tr", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](17, "mat-paginator", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](17, "mat-paginator", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       }
       if (rf & 2) {
@@ -577,7 +579,7 @@ class CourseComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("length", ctx.course == null ? null : ctx.course.lessonsCount)("pageSize", 3)("pageSizeOptions", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction0"](9, _c0));
       }
     },
-    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatTable, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatColumnDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderRow, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatRow, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_7__.MatPaginator, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_10__.MatProgressSpinner],
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatTable, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatColumnDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatHeaderRow, _angular_material_table__WEBPACK_IMPORTED_MODULE_9__.MatRow, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_7__.MatPaginator, _angular_material_sort__WEBPACK_IMPORTED_MODULE_10__.MatSort, _angular_material_sort__WEBPACK_IMPORTED_MODULE_10__.MatSortHeader, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_11__.MatProgressSpinner],
     styles: [".course[_ngcontent-%COMP%] {\n  text-align: center;\n  width: 390px;\n  margin: 40px auto;\n}\n\n.course-thumbnail[_ngcontent-%COMP%] {\n  width: 150px;\n  margin: 20px auto 0 auto;\n  display: block;\n}\n\n.description-cell[_ngcontent-%COMP%] {\n  text-align: left;\n  margin: 10px auto;\n}\n\n.duration-cell[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.duration-cell[_ngcontent-%COMP%]   mat-icon[_ngcontent-%COMP%] {\n  display: inline-block;\n  vertical-align: middle;\n  font-size: 20px;\n}\n\n.spinner-container[_ngcontent-%COMP%] {\n  height: 360px;\n  width: 390px;\n  position: fixed;\n}\n\n.lessons-table[_ngcontent-%COMP%] {\n  min-height: 360px;\n  margin-top: 10px;\n  max-width: 450px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.lessons-table[_ngcontent-%COMP%]   tr[_ngcontent-%COMP%]:hover {\n  background: whitesmoke;\n  cursor: pointer;\n}\n\nmat-paginator[_ngcontent-%COMP%] {\n  width: 400px;\n  padding-bottom: 10px;\n  margin-bottom: 100px;\n}\n\n.spinner-container[_ngcontent-%COMP%]   mat-spinner[_ngcontent-%COMP%] {\n  margin: 130px auto 0 auto;\n}\n\n.mat-column-seqNo[_ngcontent-%COMP%] {\n  width: 32px;\n  border-right: 1px solid black;\n  padding-right: 24px;\n  text-align: center;\n}\n\n.mat-column-description[_ngcontent-%COMP%] {\n  padding-left: 20px;\n  text-align: left;\n}\n\n.mat-column-duration[_ngcontent-%COMP%] {\n  font-style: italic;\n  text-align: left;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY291cnNlL2NvdXJzZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGlCQUFBO0FBQUY7O0FBR0E7RUFDRSxZQUFBO0VBQ0Esd0JBQUE7RUFDQSxjQUFBO0FBQUY7O0FBR0E7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0FBQUY7O0FBR0E7RUFDRSxrQkFBQTtBQUFGOztBQUdBO0VBQ0UscUJBQUE7RUFDQSxzQkFBQTtFQUNBLGVBQUE7QUFBRjs7QUFHQTtFQUNFLGFBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtBQUFGOztBQUdBO0VBQ0UsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBQUFGO0FBQ0U7RUFDRSxzQkFBQTtFQUNBLGVBQUE7QUFDSjs7QUFHQTtFQUNFLFlBQUE7RUFDQSxvQkFBQTtFQUNBLG9CQUFBO0FBQUY7O0FBR0E7RUFDRSx5QkFBQTtBQUFGOztBQUdBO0VBQ0UsV0FBQTtFQUNBLDZCQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQUFGOztBQUdBO0VBQ0Usa0JBQUE7RUFDQSxnQkFBQTtBQUFGOztBQUdBO0VBQ0Usa0JBQUE7RUFDQSxnQkFBQTtBQUFGIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5jb3Vyc2Uge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB3aWR0aDogMzkwcHg7XHJcbiAgbWFyZ2luOiA0MHB4IGF1dG87XHJcbn1cclxuXHJcbi5jb3Vyc2UtdGh1bWJuYWlsIHtcclxuICB3aWR0aDogMTUwcHg7XHJcbiAgbWFyZ2luOiAyMHB4IGF1dG8gMCBhdXRvO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG59XHJcblxyXG4uZGVzY3JpcHRpb24tY2VsbCB7XHJcbiAgdGV4dC1hbGlnbjogbGVmdDtcclxuICBtYXJnaW46IDEwcHggYXV0bztcclxufVxyXG5cclxuLmR1cmF0aW9uLWNlbGwge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLmR1cmF0aW9uLWNlbGwgbWF0LWljb24ge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gIGZvbnQtc2l6ZTogMjBweDtcclxufVxyXG5cclxuLnNwaW5uZXItY29udGFpbmVyIHtcclxuICBoZWlnaHQ6IDM2MHB4O1xyXG4gIHdpZHRoOiAzOTBweDtcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbn1cclxuXHJcbi5sZXNzb25zLXRhYmxlIHtcclxuICBtaW4taGVpZ2h0OiAzNjBweDtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIG1heC13aWR0aDogNDUwcHg7IFxyXG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG4gIG1hcmdpbi1yaWdodDogYXV0bztcclxuICB0cjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kOiB3aGl0ZXNtb2tlO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIH1cclxufVxyXG5cclxubWF0LXBhZ2luYXRvciB7XHJcbiAgd2lkdGg6IDQwMHB4O1xyXG4gIHBhZGRpbmctYm90dG9tOiAxMHB4O1xyXG4gIG1hcmdpbi1ib3R0b206IDEwMHB4O1xyXG59XHJcblxyXG4uc3Bpbm5lci1jb250YWluZXIgbWF0LXNwaW5uZXIge1xyXG4gIG1hcmdpbjogMTMwcHggYXV0byAwIGF1dG87XHJcbn1cclxuXHJcbi5tYXQtY29sdW1uLXNlcU5vIHtcclxuICB3aWR0aDogMzJweDtcclxuICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCBibGFjaztcclxuICBwYWRkaW5nLXJpZ2h0OiAyNHB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLm1hdC1jb2x1bW4tZGVzY3JpcHRpb24ge1xyXG4gIHBhZGRpbmctbGVmdDoyMHB4O1xyXG4gIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuXHJcbi5tYXQtY29sdW1uLWR1cmF0aW9uIHtcclxuICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgdGV4dC1hbGlnbjogbGVmdDtcclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
   });
 }
