@@ -23,7 +23,7 @@
     
     <mat-form-field appearance="fill">
         <mat-label>Category</mat-label>
-        <mat-select formControlName="category" multiple placeholder="Select the category...">
+        <mat-select formControlName="category" placeholder="Select the category...">
             <mat-option>None</mat-option>
             <mat-optgroup>
                 <mat-option value="Beginners">BEGINNERS</mat-option>
@@ -33,13 +33,29 @@
         </mat-select>
     </mat-form-field>
 
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
         <input matInput formNameControl="realeasedAt"
         placeholder="Release date..." [matDatepicker]="releasedAtPicker">
         <mat-datepicker-toggle matSuffix [for]="releasedAtPicker"></mat-datepicker-toggle>
-        <mat-datepicker #releasedAtPicker [dateClass]="dateclass"></mat-datepicker>
-        
+        <mat-datepicker #releasedAtPicker [dateClass]="dateclass" color="accent"></mat-datepicker>
     </mat-form-field>
+
+    <mat-checkbox color="primary" formControlName="downloadsAllowed"
+                  [disabled]="false"
+                  [indeterminate]="true">
+        Downloads Allowed?
+    </mat-checkbox>
+    <mat-form-field appearance="outline">
+        <textarea matInput formControlName="longDescription" 
+                  cdkTextareaAutosize 
+                  cdkAutosizeMinRows="2"
+                  cdkAutosizeMaxRows="5">
+        </textarea>
+    </mat-form-field>
+
+    
+    
+
 </div>
 
 

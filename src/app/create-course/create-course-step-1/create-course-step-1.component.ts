@@ -28,10 +28,11 @@ export class CreateCourseStep1Component {
   }
 
   dateclass: MatCalendarCellClassFunction<Date> = (cellDate, view) => {
-  
+
     const date = cellDate.getDate();
+
     if (view == 'month') {
-      return (date == 1) ? "highlight-date" : "";
+        return (date == 1) ? 'highlight-date' : "";
     }
     return "";
 }
