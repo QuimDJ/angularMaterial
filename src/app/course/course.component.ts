@@ -61,7 +61,8 @@ export class CourseComponent implements OnInit, AfterViewInit {
       ).subscribe();
   }
 
-    ngAfterViewInit() {
+  ngAfterViewInit() {
+    this.sort.sortChange.subscribe(() => this.paginator.pageIndex = 0);
       merge(this.sort.sortChange, this.paginator.page)
         .pipe(
           tap(() => this.loadLessonsPage())
