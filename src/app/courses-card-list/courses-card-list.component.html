@@ -8,6 +8,6 @@
     </mat-card-content>
     <mat-card-actions class="mat-card-actions" [routerLink]="['courses', course.id]">
         <button mat-raised-button color="primary">VIEW COURSE</button>
-        <button mat-raised-button color="accent" (click)="editCourse(course)">EDIT COURSE</button>
+        <button mat-raised-button color="accent" (click)="editCourse(course)" routerLink="">EDIT COURSE</button>
     </mat-card-actions>
 </mat-card>
