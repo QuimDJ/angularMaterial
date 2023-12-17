@@ -18,6 +18,7 @@ export class CoursesCardListComponent implements OnInit {
 
     cols = 3;
     rowHeight = "500px";
+    op = 0;
 
     constructor(private dialog: MatDialog,
     private responsive: BreakpointObserver) {
@@ -37,18 +38,23 @@ export class CoursesCardListComponent implements OnInit {
             const breakpoints = result.breakpoints;
 
             if (breakpoints[Breakpoints.TabletPortrait]) {
-                this.cols = 1;
+                this.cols = 1; this.op = 1;
             }
             else if (breakpoints[Breakpoints.HandsetPortrait]) {
                 this.cols = 1;
-                this.rowHeight = "430px";
+                this.rowHeight = "430px"; this.op = 2;
             }
             else if (breakpoints[Breakpoints.HandsetLandscape]) {
-                this.cols = 1;
+                this.cols = 1;this.op = 3;
             }
             else if (breakpoints[Breakpoints.TabletLandscape]) {
-                this.cols = 2;
+                this.cols = 2; this.op = 4;
             }
+            else{
+                this.cols = 3;
+                this.rowHeight = "450px"; this.op = 5;
+            }
+            console.log(this.cols, this.rowHeight,this.op);
         });
     }
 
